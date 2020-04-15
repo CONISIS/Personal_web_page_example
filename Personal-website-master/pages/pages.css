@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat:400,500,600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #5C5C5C;
+}
+
+#h2.dark,
+p.dark {
+    color: white
+}
+
+#h1,
+#h2,
+#h3,
+#h4 {
+    font-family: 'Lobster', cursive;
+    color: #CB3C83;
+}
+
+#h1 {
+    font-size: 4.8em;
+}
+
+#h2 {
+    font-size: 3.8em;
+}
+
+#h3 {
+    font-size: 3em;
+}
+
+#h4 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 0.9em;
+    color: #5C5C5C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 0 8% 0 3%;
+}
+
+h6 {
+    color: #CB3C83;
+    font-weight: 500;
+}
+
+#border {
+    border-left: 4px solid #CB3C83;
+}
+
+img.bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    max-width: 55%;
+}
+
+#warn {
+    color: rgb(139, 139, 139);
+    border-left: #CB3C83 2px solid;
+    padding-left: 1%;
+}
+
+/*Bootstrap modifications*/
+.navbar-nav>li {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    transition: 0.4s ease;
+    color: rgba(83, 83, 83, 1);
+    text-decoration: none;
+    border-bottom: 0px solid transparent;
+    width: 0%;
+    padding: 10px 0;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #CB3C83;
+    border-bottom: 3px solid #CB3C83;
+    padding: 7px 0px;
+    font-size: 1.05em;
+    width: 100%;
+}
+
+button.btn.btn-primary:hover #link {
+    color: white;
+    text-decoration: none;
+}
+
+button.btn.btn-primary:hover {
+    background-color: #CB3C83;
+    color: white;
+}
+
+button.btn.btn-primary {
+    background-color: white;
+    border: 1px #CB3C83 solid;
+}
+
+#link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #CB3C83;
+}
+
+#submit {
+    color: #CB3C83;
+}
+
+#submit:hover {
+    color: white;
+}
+
+.form-group {
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: rgb(83, 83, 83);
+}
+
+li {
+    color: #CB3C83;
+}
+
+li>p {
+    font-size: 1.1em;
+}
+
+.list-group {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.list-group>a {
+    color: #CB3C83;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 10%;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 10%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #h2.dark,
+    p.dark {
+        color: #CB3C83;
+    }
+
+    p.dark {
+        color: #5C5C5C;
+        ;
+    }
+
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 2%;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #h2.dark,
+    p.dark {
+        color: #CB3C83;
+    }
+
+    p.dark {
+        color: #5C5C5C;
+        ;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 7%;
+        padding-left: 8%;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 4%;
+        margin-right: -15px;
+    }
+
+    #name-description {
+        padding-left: 8%;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #h2.dark,
+    p.dark {
+        color: #CB3C83;
+    }
+
+    p.dark {
+        color: #5C5C5C;
+        ;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-custom {
+        background-color: rgba(255, 255, 255, 0);
+        margin-right: 1%;
+        margin-bottom: 2%;
+        z-index: 1;
+    }
+}
+
+/*Bootstrap modifications*/
+.navbar-nav>li {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    font-weight: 600;
+}
